@@ -47,5 +47,4 @@ class CountryPicker extends Component {
     );
   }
 }
-
 export default CountryPicker;

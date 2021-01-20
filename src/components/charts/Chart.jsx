@@ -14,7 +14,7 @@ class Charts extends Component {
     const url = "https://api.covidtracking.com/v1/us/daily.json";
     axios.get(url).then((res) => {
       this.setState({ dailyData: res });
-      console.log(this.props.country);
+      
     });
   };
 
@@ -22,8 +22,7 @@ class Charts extends Component {
     
     const dailyData = this.state.dailyData;
     const arr= this.props.data
-    console.log(arr.confirmed)
-    console.log(this.props.data.confirmed )
+  
     
     const LineChart = dailyData.data ? (
       <Line
